@@ -1,0 +1,10 @@
+<?php
+require __DIR__."/vendor/autoload.php";
+
+use Src\BinaryTree\LinkedbinaryTree;
+
+
+$binaryRoot = new LinkedbinaryTree('Binary Root Element');
+$binaryRoot->left = new LinkedbinaryTree('Binary Left node of Root Element');
+
+var_dump($binaryRoot);

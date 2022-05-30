@@ -1,0 +1,14 @@
+{
+    "name": "rakibhossain/binary-tree",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakib Hossain"
+        }
+    ],
+    "require": {}
+}
