@@ -1,10 +1,20 @@
 <?php
 require __DIR__."/vendor/autoload.php";
 
+use Src\Support\InOrderTraverse;
+use Src\Support\PreOrderTraverse;
+use Src\Support\PostOrderTraverse;
 use Src\BinaryTree\LinkedbinaryTree;
-
 
 $binaryRoot = new LinkedbinaryTree('Binary Root Element');
 $binaryRoot->left = new LinkedbinaryTree('Binary Left node of Root Element');
 
-var_dump($binaryRoot);
+
+// $traverse = new PreOrderTraverse;
+// $traverse = new InOrderTraverse;
+$traverse = new PostOrderTraverse;
+
+
+$traverse->handle($binaryRoot, function($data) {
+    echo $data . "\n\n";
+});
